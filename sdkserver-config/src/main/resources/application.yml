@@ -1,0 +1,16 @@
+server: 
+  port: 3344
+
+#可以通过http://{ip}:port/{application}-{profile}.yml访问
+spring:
+  application:
+    name:  sdkserver-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/5iyxx/miaolesdkserver-config.git #GitHub上面的git仓库名字
+          #username: 5iyxx
+          #password: Xx123456!!
+
+
